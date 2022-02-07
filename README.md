@@ -9,6 +9,8 @@ From _your_ host computer:
 ```
 docker create -it --name cse465 jfemiani/cse465
 ```
+NOTE: This is one time that you exactly copy the id "femianjc" and do not replace it with yours. This is the name of may account on dockerhub, where I have uploaded a machine for you all to use.  
+
 # Start your machine
 ```
 docker start -ai cse465
@@ -24,7 +26,7 @@ echo export SID=$SID >> ~/.bashrc
 
 In a terminal, type
 ```bash
-docker start -at cse465
+docker start -ai cse465
 git clone https://gitlab.csi.miamioh.edu/CSE465/$SID/lab0.git
 cd lab0
 timeout 5m make check
