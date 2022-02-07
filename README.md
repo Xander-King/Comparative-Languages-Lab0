@@ -5,6 +5,16 @@ This just makes sure you can run programs written in a variety of languages usin
 # Create your machine
 First, [install docker](https://docs.docker.com/get-docker/) on your system.
 
+Once docker desktop is installed, please modify the settings as follows:
+- Go to Settings
+- Go to Docker Engine
+- Type the following code immediately after the first curly-brace:
+   ```
+   "default-address-pools":  [    {"base":"10.10.0.0/16","size":24}  ],
+   ```
+   do not forget to preserve the comma and make sure you include all the quotes etc.   
+   This setting is to work around Miami IT's IP address range limitations. 
+
 From _your_ host computer:
 ```
 docker create -it --name cse465 jfemiani/cse465
