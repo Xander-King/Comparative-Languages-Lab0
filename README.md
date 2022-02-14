@@ -16,6 +16,8 @@ You may EITHER:
       echo export SID=$SID >> ~/.bashrc
       ```
       This way I can use $SID in place of your student ID whenever I give instructions in the future. 
+
+      **Of course** you should replace `<your student id>` with whatever your student ID is. 
 3. Set up SSH access to gitlab  
      Follow the instructions on https://gitlab.csi.miamioh.edu/-/profile/keys  
      This typically amounts to typing
